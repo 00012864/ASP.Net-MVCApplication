@@ -1,0 +1,22 @@
+﻿@model _12864MVCApplication.Models.Product
+
+<table class="table table-responsive" , border="1" style="height: 80px" width="50%">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>ProductCategory</th>
+    </tr>
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.Name</td>
+        <td>@Model.Description</td>
+        <td>@Model.Price</td>
+        <td>@Model.ProductCategory.Name</td>
+
+    </tr>
+</table>
+
+
+
