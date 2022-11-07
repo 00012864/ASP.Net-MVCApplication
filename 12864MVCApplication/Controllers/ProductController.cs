@@ -17,21 +17,10 @@ namespace _12864MVCApplication.Controllers
         // Web API service url from Microservice Application 
         string Baseurl = "https://localhost:44359/";
 
-        //info necessary for edit section 
-        HttpClient client;
-        Uri baseAddress = new Uri("https://localhost:44359/");
-
-        public ProductController()
-        {
-            client = new HttpClient();
-            client.BaseAddress = baseAddress;
-        }
-
         // GET: Product
         public async Task<ActionResult> Index()
         {
 
-            string Baseurl = "https://localhost:44359/";
             List<Product> Products = new List<Product>();
             using (var client = new HttpClient())
             {
