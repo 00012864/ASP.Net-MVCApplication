@@ -15,7 +15,7 @@ namespace _12864MVCApplication.Controllers
     public class ProductController : Controller
     {
         // Web API service url from Microservice Application 
-        string Baseurl = "https://localhost:44359/";
+        string Baseurl = "http://00012864microserviceapi-prod.ap-northeast-1.elasticbeanstalk.com/";
 
         // GET: Product
         public async Task<ActionResult> Index()
